@@ -24,12 +24,12 @@ namespace adventofcode05
                 if (nextLine >= 0 && nextLine < lines.Length)
                 {
                     int oldix = nextLine;
-                    nextLine = nextLine + lines[oldix];
+                    nextLine += lines[oldix];
 
                     if (lines[oldix] >= 3)
-                        lines[oldix] = lines[oldix] - 1;
+                        lines[oldix] -= 1;
                     else
-                        lines[oldix] = lines[oldix] + 1;
+                        lines[oldix] += 1;
 
                     steps++;
                 }
